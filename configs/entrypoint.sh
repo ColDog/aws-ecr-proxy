@@ -83,4 +83,6 @@ sed -i "s|REGISTRY_URL|$reg_url|g" ${nx_conf}
 
 /renew_token.sh &
 
+mkdir -p /var/lib/nginx/cache
+
 exec "$@"
